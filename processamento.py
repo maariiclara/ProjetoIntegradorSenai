@@ -71,3 +71,17 @@ def aluno_destaque(lista_alunos):
     return melhor_aluno, maior_media
 
 
+def gerar_relatorio(lista_alunos):
+    arquivo = open("resultado.txt", "w", encoding="utf-8")
+    arquivo.write("******** RELATÓRIO DE DESEMPENHO ******** \n")
+ 
+    melhor_aluno, maior_media = aluno_destaque(lista_alunos)
+    for nome, notas in lista_alunos:
+        media = media_alunos(notas)
+        arquivo.write(f"\n* {nome} - Média: {media:.2f} \n")
+        if media < 7:
+            arquivo.write("Aluno(a) em Recuperação \n")
+        else:
+            arquivo.write("Aluno(a) Aprovado \n")   
+    arquivo.write(f"\nTOP STUDENT: {melhor_aluno} - Média: {maior_media:.2f}")
+    arquivo.close()
