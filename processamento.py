@@ -48,3 +48,14 @@ def todos_alunos(lista_alunos):
         else:
             print("Aluno(a) Aprovado")
             print("")
+
+
+def alunos_recuperacao(lista_alunos):
+    print("** Alunos em Recuperação **")
+    print("")
+    for nome, notas in lista_alunos:
+        media = media_alunos(notas)
+        if media < 7:
+            print(f"* {nome} - Média: {media:.2f}")
+            print("")
+
