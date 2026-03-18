@@ -24,3 +24,10 @@ def cadastro_aluno():
     media = media_alunos(notas)
     print(f"** {nome} foi cadastrado(a) com sucesso! Com a média final de: {media:.2f} **")
 
+
+def media_alunos(notas):
+    soma = 0
+    for nota in notas:
+        soma += nota
+    return soma / len(notas)
+
