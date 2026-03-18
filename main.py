@@ -24,7 +24,7 @@ while True:
         alunos_recuperacao(lista_alunos)
     elif escolha == 4:
 
-        if len(lista_alunos) == 0:
+        if len(lista_alunos) != 0:
             melhor_aluno, maior_media = aluno_destaque(lista_alunos)
             print("")
             print(f"* Top Student: {melhor_aluno} - Média: {maior_media:.2f}")
@@ -32,8 +32,10 @@ while True:
             print("** Nenhum aluno foi cadastrado ainda! **")
             
     elif escolha == 5:
-        pass
+        gerar_relatorio(lista_alunos)
+        print("** Relatório Gerado com Sucesso **")
     elif escolha == 6:
-        pass
+        print("** Você será desconectado em breve... **")
+        break
     else:
         print("** Opção inválida! Tente novamente! **")

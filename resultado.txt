@@ -1,0 +1,12 @@
+******** RELATÓRIO DE DESEMPENHO ******** 
+
+* pedro - Média: 5.33 
+Aluno(a) em Recuperação 
+
+* clara - Média: 8.00 
+Aluno(a) Aprovado 
+
+* lucas - Média: 6.33 
+Aluno(a) em Recuperação 
+
+TOP STUDENT: clara - Média: 8.00
