@@ -19,7 +19,7 @@ while True:
     if escolha == 1:
         cadastro_aluno()
     elif escolha == 2:
-        pass
+        todos_alunos(lista_alunos)
     elif escolha == 3:
         pass
     elif escolha == 4:
