@@ -17,7 +17,7 @@ while True:
     escolha = int(input("Escolha o número desejado: "))
 
     if escolha == 1:
-        pass
+        cadastro_aluno()
     elif escolha == 2:
         pass
     elif escolha == 3:
