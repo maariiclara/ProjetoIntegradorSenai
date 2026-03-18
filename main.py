@@ -21,7 +21,7 @@ while True:
     elif escolha == 2:
         todos_alunos(lista_alunos)
     elif escolha == 3:
-        pass
+        alunos_recuperacao(lista_alunos)
     elif escolha == 4:
         pass
     elif escolha == 5:
