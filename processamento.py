@@ -1,0 +1,1 @@
+# Toda a parte lógica do programa - funções
