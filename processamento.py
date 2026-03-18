@@ -31,3 +31,20 @@ def media_alunos(notas):
         soma += nota
     return soma / len(notas)
 
+
+def todos_alunos(lista_alunos):
+    maior_media = aluno_destaque(lista_alunos)
+    print("** Lista Completa dos Alunos **")
+    print("")
+    for nome, notas in lista_alunos:
+        media = media_alunos(notas)
+        print(f"* {nome} - Média: {media:.2f}")
+        if media < 7:
+            print("Aluno(a) em Recuperação")
+            print("")
+        elif media == maior_media:
+            print("Aluno(a) Top Student")
+            print("")
+        else:
+            print("Aluno(a) Aprovado")
+            print("")
