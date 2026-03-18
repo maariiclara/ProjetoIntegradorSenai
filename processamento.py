@@ -59,3 +59,15 @@ def alunos_recuperacao(lista_alunos):
             print(f"* {nome} - Média: {media:.2f}")
             print("")
 
+
+def aluno_destaque(lista_alunos):
+    maior_media = 0
+    melhor_aluno = ""
+    for nome, notas in lista_alunos:
+        media = media_alunos(notas)
+        if media > maior_media:
+            maior_media = media
+            melhor_aluno = nome
+    return melhor_aluno, maior_media
+
+

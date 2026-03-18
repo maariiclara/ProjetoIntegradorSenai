@@ -23,7 +23,14 @@ while True:
     elif escolha == 3:
         alunos_recuperacao(lista_alunos)
     elif escolha == 4:
-        pass
+
+        if len(lista_alunos) == 0:
+            melhor_aluno, maior_media = aluno_destaque(lista_alunos)
+            print("")
+            print(f"* Top Student: {melhor_aluno} - Média: {maior_media:.2f}")
+        else:
+            print("** Nenhum aluno foi cadastrado ainda! **")
+            
     elif escolha == 5:
         pass
     elif escolha == 6:
